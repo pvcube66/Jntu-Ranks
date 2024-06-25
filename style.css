@@ -184,3 +184,22 @@ h1 {
 }
 
 
+
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+    .container{
+        width:900px;
+        margin-inline:auto;
+        margin-left: 40px;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #resultsContainer{
+        margin-top: 1200px;
+        width:280px;
+        overflow-x: hidden;
+    }
+  }
