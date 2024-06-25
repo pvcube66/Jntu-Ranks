@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Number Input</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Any additional styles specific to index.html */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Roll Number Input</h2>
+        <form action="results.html" method="get">
+            <div class="form-group">
+                <label for="sequence">Roll Number Sequence</label>
+                <input  type="text" id="sequence" name="sequence" required>
+            </div>
+            <div class="form-group">
+                <label for="startRoll">Starting Roll Number</label>
+                <input type="text" id="startRoll" name="startRoll" required>
+            </div>
+            <div class="form-group">
+                <label for="endRoll">Ending Roll Number</label>
+                <input type="text" id="endRoll" name="endRoll" required>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+            <div class="loader"></div> <!-- Loading spinner -->
+        </form>
+    </div>
+
+    <div id="resultsContainer"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
