@@ -1,4 +1,6 @@
 window.onload = async function () {
+  const loadingMessage = document.getElementById("loadingMessage");
+  loadingMessage.style.display = "block";
   const urlParams = new URLSearchParams(window.location.search);
   const sequence = urlParams.get("sequence");
   const startRoll = urlParams.get("startRoll");
@@ -31,21 +33,18 @@ window.onload = async function () {
         "No data found for the provided roll numbers.";
       return;
     }
-    // Sort the resArr based on CGPA in descending order
+
     resArr.sort((a, b) => {
       const cgpaA = parseFloat(a.cgpa);
       const cgpaB = parseFloat(b.cgpa);
 
-      // Check if either CGPA is not a number
       if (isNaN(cgpaA) || isNaN(cgpaB)) {
-        // Sort invalid CGPA values at the end
         return isNaN(cgpaA) ? 1 : -1;
       }
 
-      // Sort in descending order based on CGPA
       return cgpaB - cgpaA;
     });
-
+    loadingMessage.style.display = "none";
     displayResults(resArr, resultsContainer);
   } else {
     document.getElementById("resultsContainer").innerText =
