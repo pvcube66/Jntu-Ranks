@@ -199,8 +199,8 @@ h1 {
     }
 
     #resultsContainer{
-        height: 2300px;
-        margin-top: 950px;
+        height: 2000px;
+        margin-top: 550px;
         width:300px;
         overflow-x: hidden;
     }
