@@ -40,6 +40,19 @@ h1 {
     width:500px;
 }
 
+.loading-message {
+    display: none; 
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container{
+    margin-left: 400px;
+}
+
+
 .results-table th,
 .results-table td {
     border: 1px solid #ddd;
