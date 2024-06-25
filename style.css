@@ -36,7 +36,7 @@ h1 {
 }
 
 #resultsContainer{
-    margin-top: 200px;
+    margin-top: 1200px;
     width:500px;
 }
 
@@ -198,7 +198,7 @@ h1 {
     }
 
     #resultsContainer{
-        margin-top: 50px;
+        margin-top: 350px;
         width:300px;
         overflow-x: hidden;
     }
